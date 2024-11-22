@@ -9,7 +9,7 @@ public class BrickScript : MonoBehaviour
 
     //Brick Properties
     [SerializeField]
-    private int health = 1;
+    private int health = 3;
     [SerializeField]
     private float reflectingForce = 0.2f;
     [SerializeField]
@@ -22,6 +22,11 @@ public class BrickScript : MonoBehaviour
     private PlayableDirector director;
     [SerializeField]
     private bool isMathBrick = false;
+    [SerializeField]
+    private int scoreValue = 10;
+     [SerializeField]
+    private GameController gameController;
+
 
 
 
@@ -51,6 +56,7 @@ public class BrickScript : MonoBehaviour
         currentHealth -= damage;
 
         if(currentHealth <= 0){
+            gameController.AddScore(100);
             HandleDestruction();
         }
         

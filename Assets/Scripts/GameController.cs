@@ -9,8 +9,11 @@ public class GameController : MonoBehaviour
 {
     [SerializeField]
     private int lives = 3; 
+    private int currentScore = 0;
     [SerializeField]
     private TMP_Text livesTextInfo;
+    [SerializeField]
+    private TMP_Text scoreTextInfo;
     [SerializeField]
     private GameObject ballPrefab;
     [SerializeField]
@@ -42,6 +45,8 @@ public class GameController : MonoBehaviour
     public void LoseALife() {
         if (lives == 0) {
             lives = 3;
+            currentScore = 0;
+            scoreTextInfo.text = "Score: " + currentScore.ToString();
             ResetBallAndPaddle();
         } 
         else {
@@ -74,5 +79,9 @@ public class GameController : MonoBehaviour
         paddle.SetNewBallRigidBody();
     }
     
+    public void AddScore(int score) {
+        currentScore += score;
+        scoreTextInfo.text = "Score: " + currentScore.ToString();
+    }
     
 }

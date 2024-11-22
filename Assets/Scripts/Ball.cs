@@ -18,10 +18,9 @@ public class Ball : MonoBehaviour
             audiosource.clip = clips[0];
             audiosource.Play(); 
         }
-        /*if (collision.gameObject.CompareTag("Brick")) {
-            audiosource.clip = clips[1];
-            audiosource.Play();
-        }*/
+        if (collision.gameObject.CompareTag("Brick")) {
+            gameController.AddScore(10);
+        }
         if (collision.gameObject.CompareTag("Border")) {
             audiosource.clip = clips[2];    
             audiosource.Play();
