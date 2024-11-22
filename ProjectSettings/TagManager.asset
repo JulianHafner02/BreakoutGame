@@ -9,6 +9,7 @@ TagManager:
   - BottomBorder
   - Ball
   - Brick
+  - Input
   layers:
   - Default
   - TransparentFX
