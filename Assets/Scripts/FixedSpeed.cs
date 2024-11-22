@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class FixedSpeed : MonoBehaviour
 {
-    Rigidbody m_Rigidbody;
-    public float m_Thrust = 20f;
+    Rigidbody rigidBody;
+    public float thrust = 20f;
 
-    void Start()
+    private void Start()
     {
-        m_Rigidbody = GetComponent<Rigidbody>();
-        m_Rigidbody.AddForce(Vector3.down * m_Thrust, ForceMode.Impulse);
+        rigidBody = GetComponent<Rigidbody>();
+        rigidBody.AddForce(Vector3.down);
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         Rigidbody rb = GetComponent<Rigidbody>();
         float fixedSpeed = 10f;
         rb.velocity = rb.velocity.normalized * fixedSpeed;
-
-        
     }
 }

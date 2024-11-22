@@ -5,34 +5,57 @@ using UnityEngine;
 public class PaddleControl : MonoBehaviour
 {
     [SerializeField]
-    private float paddleSpeed = 2f;
-
-    // Update is called once per frame
+    private float paddleSpeed = 10f;
+    private Rigidbody ballRb;
     void Update()
     {
-        if(Time.timeScale == 0f){
+        if (Time.timeScale == 0f)
             return;
-        }
 
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.LeftArrow)  || Input.GetKey(KeyCode.RightArrow))
         {
-            float horizontalAxis = Input.GetAxis("Horizontal");
-            Vector3 position = transform.position + new Vector3(horizontalAxis * paddleSpeed * Time.deltaTime, 0, 0);
-            transform.position = position;
-        }        
+            float horizontal = Input.GetAxis("Horizontal");
+            Vector3 newPosition = transform.position + new Vector3(horizontal * paddleSpeed * Time.deltaTime, 0, 0);
+            transform.position = newPosition;
+            
+        }
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
+            float horizontal = Input.GetAxis("Horizontal");
+            Vector3 newPosition = transform.position + new Vector3(horizontal * paddleSpeed * Time.deltaTime, 0, 0);
+            transform.position = newPosition;
+        }
     }
 
-    private void OnCollisonEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        Rigidbody ballRb = collision.rigidbody;
-
+        ballRb = collision.gameObject.GetComponent<Rigidbody>();
         if (ballRb != null)
         {
-            Vector3 hitPoint = collision.GetContact(0).point;
-            float hitFactor = (hitPoint.x - transform.position.x) / transform.localScale.x;
-            Vector3 newDirection = new Vector3(hitFactor, 1, 0).normalized;
+            //Get the exact point where the ball hit the paddle
+            Vector3 hitpoint = collision.contacts[0].point;
 
-            ballRb.velocity = newDirection * ballRb.velocity.magnitude;
+            float hitfactor = (hitpoint.x - transform.position.x) / transform.localScale.x;
+
+            Vector3 newDirection = new Vector3(hitfactor, 1, 0).normalized;
+            ballRb.velocity = newDirection; 
         }
     }
+
+    public void SetNewBallRigidBody() 
+    {
+        ballRb = GameObject.FindGameObjectWithTag("Ball").GetComponent<Rigidbody>();
+        ballRb.interpolation = RigidbodyInterpolation.Interpolate;
+        ballRb.velocity = Vector3.zero;
+        ballRb.useGravity = false;
+        Invoke(nameof(InitialDownPushToBall),2f);
+    }
+
+    public void InitialDownPushToBall () {
+        ballRb.useGravity = true;
+        ballRb.AddForce(new Vector2(Random.Range(-0.5f,0.5f), -1f).normalized * 5f,ForceMode.Impulse);
+    }
 }
+
+   
+
