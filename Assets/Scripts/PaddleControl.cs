@@ -54,6 +54,7 @@ public class PaddleControl : MonoBehaviour
     public void InitialDownPushToBall () {
         ballRb.useGravity = true;
         ballRb.AddForce(new Vector2(Random.Range(-0.5f,0.5f), -1f).normalized * 5f,ForceMode.Impulse);
+        ballRb.useGravity = false;
     }
 }
 

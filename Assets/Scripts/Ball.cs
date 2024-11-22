@@ -10,22 +10,18 @@ public class Ball : MonoBehaviour
     private AudioSource audiosource;
     [SerializeField]
     private List<AudioClip> clips;
-    // Start is called before the first frame update
-    void Start()
-    {
-        audiosource = GetComponent<AudioSource>();
-        gameController = GameObject.Find("GameController").GetComponent<GameController>();
-    }
+    // Start is called before the first frame 
+
     
     private void OnCollisionEnter (Collision collision) {
         if (collision.gameObject.CompareTag("Paddle")) {
             audiosource.clip = clips[0];
             audiosource.Play(); 
         }
-        if (collision.gameObject.CompareTag("Brick")) {
+        /*if (collision.gameObject.CompareTag("Brick")) {
             audiosource.clip = clips[1];
             audiosource.Play();
-        }
+        }*/
         if (collision.gameObject.CompareTag("Border")) {
             audiosource.clip = clips[2];    
             audiosource.Play();
