@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -77,7 +78,8 @@ public class BrickScript : MonoBehaviour
     }
     
     private void MathEvent(){
-        //do something
+        TextMeshProUGUI mathq = GameObject.Find("Math").GetComponent<TextMeshProUGUI>();
+        mathq.text = "2 + 2";
     }
 
     private void OnCollisionEnter(Collision collision){
