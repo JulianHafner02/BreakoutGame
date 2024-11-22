@@ -45,6 +45,8 @@ public class GameController : MonoBehaviour
     public void LoseALife() {
         if (lives == 0) {
             lives = 3;
+            currentScore = 0;
+            scoreTextInfo.text = "Score: " + currentScore.ToString();
             ResetBallAndPaddle();
         } 
         else {
