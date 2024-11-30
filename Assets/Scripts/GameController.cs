@@ -83,5 +83,4 @@ public class GameController : MonoBehaviour
         currentScore += score;
         scoreTextInfo.text = "Score: " + currentScore.ToString();
     }
-    
 }
