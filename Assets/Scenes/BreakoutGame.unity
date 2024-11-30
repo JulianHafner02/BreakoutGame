@@ -205,8 +205,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.5
-  m_fontSizeBase: 0.5
+  m_fontSize: 0.45
+  m_fontSizeBase: 0.45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -317,6 +317,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: input
+      value: 
+      objectReference: {fileID: 963194230}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: userInput
+      value: 
+      objectReference: {fileID: 963194230}
     - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: gameController
       value: 
@@ -493,6 +501,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: input
+      value: 
+      objectReference: {fileID: 963194230}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: userInput
+      value: 
+      objectReference: {fileID: 963194230}
     - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: gameController
       value: 
@@ -1629,6 +1645,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: input
+      value: 
+      objectReference: {fileID: 963194230}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: userInput
+      value: 
+      objectReference: {fileID: 963194230}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
@@ -2045,6 +2069,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f5571bae7b22a41846d977ae2a9a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brickScript: {fileID: 1510417013}
+  gameController: {fileID: 963194229}
 --- !u!1 &1035031666
 GameObject:
   m_ObjectHideFlags: 0
@@ -2578,6 +2604,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: input
+      value: 
+      objectReference: {fileID: 963194230}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: userInput
+      value: 
+      objectReference: {fileID: 963194230}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
@@ -2916,14 +2950,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -2933,11 +2967,11 @@ MonoBehaviour:
       - m_Target: {fileID: 963194230}
         m_TargetAssemblyTypeName: UI_Input, Assembly-CSharp
         m_MethodName: UserInput
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 88
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3406,6 +3440,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1510417013 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+  m_PrefabInstance: {fileID: 1087508347}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 941571e962191324e8722f2a1d03fc45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1536474463
 PrefabInstance:
   m_ObjectHideFlags: 0

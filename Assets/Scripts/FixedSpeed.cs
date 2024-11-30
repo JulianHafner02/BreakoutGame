@@ -13,10 +13,11 @@ public class FixedSpeed : MonoBehaviour
         rigidBody.AddForce(Vector3.down);
     }
 
+
     private void FixedUpdate()
     {
         Rigidbody rb = GetComponent<Rigidbody>();
-        float fixedSpeed = 10f;
+        float fixedSpeed = 5f;
         rb.velocity = rb.velocity.normalized * fixedSpeed;
     }
 }
