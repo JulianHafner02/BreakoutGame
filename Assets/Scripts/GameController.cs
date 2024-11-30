@@ -28,31 +28,24 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("CheckForEndOfGame",20,3); // 20 bricks destroyed or 3 lives wasted
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         livesTextInfo.text = "Balls: " + lives.ToString();
+        scoreTextInfo.text = "Score: " + currentScore.ToString();
 
-        if (lives < 0) { //checks if lives are gone and gameover if so
-            GameOverScreen.GetComponent<Canvas>().enabled = true;
-            Time.timeScale = 0;
-        }
+        CheckForEndOfGame();
+
     }
 
     public void LoseALife() {
-        if (lives == 0) {
-            lives = 3;
-            currentScore = 0;
-            scoreTextInfo.text = "Score: " + currentScore.ToString();
-            ResetBallAndPaddle();
-        } 
-        else {
-            lives--;
-            ResetBallAndPaddle();
-        }
+       
+        lives--;
+        ResetBallAndPaddle();
+        
     }
 
     public void ResetBallAndPaddle() {
@@ -66,13 +59,7 @@ public class GameController : MonoBehaviour
         paddle.GetComponent<MeshRenderer>().enabled = true;
         paddle.SetNewBallRigidBody();
     }
-    /*
-    public void CheckForEndOfGame () {
-        if (GameObject.Find("BorderBottom").transform.childCount == 0) {
-            SceneManager.LoadScene(0);
-        }
-    }
-    */
+
 
     public void SpawnNewBall() {
         Instantiate(ballPrefab,ballStartPosition,Quaternion.identity);
@@ -81,7 +68,16 @@ public class GameController : MonoBehaviour
     
     public void AddScore(int score) {
         currentScore += score;
-        scoreTextInfo.text = "Score: " + currentScore.ToString();
+    }
+
+    public void CheckForEndOfGame () {
+        if (lives == 0) {
+            SceneManager.LoadScene("GameOver");
+        }
+
+        if (GameObject.FindGameObjectsWithTag("Brick").Length == 0) {
+            SceneManager.LoadScene("WinScreen");
+        }
     }
     
 }

@@ -6,10 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Animation.unity
     guid: cda2afe8865b3b64197f0d411675c435
+  - enabled: 1
+    path: Assets/Scenes/LevelSelection.unity
+    guid: 8d916c42de413aa44bd895f68b8ae3c3
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: c09aae5b8ada6c746985ebd1cc42c480
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 8259eaf5545fecb48967b31d0f263f9a
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 50a596e61b1e53844a14cbf9b6163f6d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
