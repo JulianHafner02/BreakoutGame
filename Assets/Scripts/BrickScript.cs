@@ -68,6 +68,7 @@ public class BrickScript : MonoBehaviour
             MathEvent();
         }
         director.Play();
+       
         audioSource?.PlayOneShot(destructionSound);
         boxCollider.enabled = false;
         
@@ -76,7 +77,7 @@ public class BrickScript : MonoBehaviour
        
         Destroy(gameObject, 4f);
     }
-    
+
     private void MathEvent(){
         TextMeshProUGUI mathq = GameObject.Find("Math").GetComponent<TextMeshProUGUI>();
         mathq.text = "2 + 2";
