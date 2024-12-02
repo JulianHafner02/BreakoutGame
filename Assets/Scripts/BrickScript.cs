@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
+using NUnit.Framework.Interfaces;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -25,10 +27,11 @@ public class BrickScript : MonoBehaviour
     private bool isMathBrick = false;
     [SerializeField]
     private int scoreValue = 10;
-     [SerializeField]
+    [SerializeField]
     private GameController gameController;
-
-
+    public int mathResult;
+    [SerializeField]
+    private UI_Input input;
 
 
     //private Fields
@@ -51,6 +54,12 @@ public class BrickScript : MonoBehaviour
         ballRb.AddForce(ballRb.velocity * reflectingForce, ForceMode.VelocityChange);
         callback?.Invoke(1);
     }
+
+    private int GenerateRandomNumber() {
+        int number = UnityEngine.Random.Range(1, 31);
+        return number;
+    }
+
 
     public void TakeDamage(int damage){
 
@@ -78,8 +87,7 @@ public class BrickScript : MonoBehaviour
     }
     
     private void MathEvent(){
-        TextMeshProUGUI mathq = GameObject.Find("Math").GetComponent<TextMeshProUGUI>();
-        mathq.text = "2 + 2";
+        input.InvokeMathEvent();
     }
 
     private void OnCollisionEnter(Collision collision){
@@ -91,5 +99,8 @@ public class BrickScript : MonoBehaviour
         }
 
     }
-            
+    
+    public int GetMathResult(){
+        return mathResult;
+    }
 }
