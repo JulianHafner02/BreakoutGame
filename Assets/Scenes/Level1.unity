@@ -309,6 +309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1880644928481404356, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: m_TagString
+      value: Brick
+      objectReference: {fileID: 0}
     - target: {fileID: 2940977817072488273, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -493,6 +497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1880644928481404356, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: m_TagString
+      value: Brick
+      objectReference: {fileID: 0}
     - target: {fileID: 2940977817072488273, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -537,6 +545,10 @@ PrefabInstance:
     - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_Name
       value: Brick3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: m_TagString
+      value: Brick
       objectReference: {fileID: 0}
     - target: {fileID: 8468989345033556951, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_LocalPosition.x
@@ -598,6 +610,10 @@ PrefabInstance:
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: m_TagString
+      value: Brick
       objectReference: {fileID: 0}
     - target: {fileID: 6697096093778696928, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Mesh
@@ -791,6 +807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: m_TagString
+      value: Brick
+      objectReference: {fileID: 0}
     - target: {fileID: 6697096093778696928, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -884,6 +904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: m_TagString
+      value: Brick
+      objectReference: {fileID: 0}
     - target: {fileID: 8468989345033556951, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.03
@@ -944,6 +968,10 @@ PrefabInstance:
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1
+      objectReference: {fileID: 0}
+    - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: m_TagString
+      value: Brick
       objectReference: {fileID: 0}
     - target: {fileID: 6697096093778696928, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Mesh
@@ -1611,6 +1639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: m_TagString
+      value: Brick
+      objectReference: {fileID: 0}
     - target: {fileID: 8468989345033556951, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.12
@@ -1707,6 +1739,10 @@ PrefabInstance:
     - target: {fileID: 1880644928481404356, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: m_Name
       value: Brick4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880644928481404356, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: m_TagString
+      value: Brick
       objectReference: {fileID: 0}
     - target: {fileID: 2940977817072488273, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -3144,6 +3180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick3
       objectReference: {fileID: 0}
+    - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: m_TagString
+      value: Brick
+      objectReference: {fileID: 0}
     - target: {fileID: 8468989345033556951, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.38
@@ -3359,6 +3399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: m_TagString
+      value: Brick
+      objectReference: {fileID: 0}
     - target: {fileID: 8468989345033556951, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.16
@@ -3527,6 +3571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: m_TagString
+      value: Brick
+      objectReference: {fileID: 0}
     - target: {fileID: 6697096093778696928, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -3607,6 +3655,10 @@ PrefabInstance:
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: m_TagString
+      value: Brick
       objectReference: {fileID: 0}
     - target: {fileID: 6697096093778696928, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Mesh
@@ -3693,6 +3745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: m_TagString
+      value: Brick
+      objectReference: {fileID: 0}
     - target: {fileID: 8468989345033556951, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.03
@@ -3753,6 +3809,10 @@ PrefabInstance:
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: m_TagString
+      value: Brick
       objectReference: {fileID: 0}
     - target: {fileID: 6697096093778696928, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Mesh
@@ -3842,6 +3902,10 @@ PrefabInstance:
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: m_TagString
+      value: Brick
       objectReference: {fileID: 0}
     - target: {fileID: 6697096093778696928, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Mesh
@@ -3935,6 +3999,10 @@ PrefabInstance:
     - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_Name
       value: Brick3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: m_TagString
+      value: Brick
       objectReference: {fileID: 0}
     - target: {fileID: 8468989345033556951, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_LocalPosition.x
