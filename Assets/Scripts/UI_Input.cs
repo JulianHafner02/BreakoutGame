@@ -31,24 +31,27 @@ public class UI_Input : MonoBehaviour
     }
     
     public void UserInput() {
-        inputResult = Convert.ToInt32(inputText.text);
-        equations[index].answer = inputResult;
-        inputText.text = "";
-        inputText.ActivateInputField();
-        if (inputResult == mathresult) {
-            mathq.text = "Correct";
-            mathq.color = Color.green;
-            gameController.AddScore(500);
-            equations[index].isCorrect = true;
-            WriteArrayToFile(equations[index], filePath);
-        } else {
-            mathq.text = "Incorrect";
-            mathq.color = Color.red;
-            gameController.AddScore(-250);
-            equations[index].isCorrect = false;
-            WriteArrayToFile(equations[index], filePath);
+        if (inputText.text != null && inputText.text != "") {
+            inputResult = Convert.ToInt32(inputText.text);
+            equations[index].answer = inputResult;
+            inputText.text = "";
+            inputText.ActivateInputField();
+            if (inputResult == mathresult) {
+                mathq.text = "Correct";
+                mathq.color = Color.green;
+                gameController.AddScore(500);
+                equations[index].isCorrect = true;
+                WriteArrayToFile(equations[index], filePath);
+            } else {
+                mathq.text = "Incorrect";
+                mathq.color = Color.red;
+                gameController.AddScore(-250);
+                equations[index].isCorrect = false;
+                WriteArrayToFile(equations[index], filePath);
+            }
+            Debug.Log(equations[index].equationString +" "+ equations[index].result +" "+ equations[index].answer + " " + equations[index].isCorrect); 
         }
-        Debug.Log(equations[index].equationString +" "+ equations[index].result +" "+ equations[index].answer + " " + equations[index].isCorrect); 
+        
     }
 
     public int GetInput() {

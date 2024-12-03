@@ -23,11 +23,16 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private PaddleControl paddle;
     [SerializeField]
-    private Canvas GameOverScreen;
+    private AudioClip backgroundMusic;
 
     // Start is called before the first frame update
     void Start()
     {
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.clip = backgroundMusic;
+        audioSource.loop = true;
+        audioSource.volume = 0.5f;
+        audioSource.Play();
         
     }
 

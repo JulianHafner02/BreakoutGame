@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class Ball : MonoBehaviour
 {
@@ -10,7 +11,12 @@ public class Ball : MonoBehaviour
     private AudioSource audiosource;
     [SerializeField]
     private List<AudioClip> clips;
-    // Start is called before the first frame 
+  
+    private CinemachineImpulseSource impulseSource;
+
+    private void Start() {
+        impulseSource = GetComponent<CinemachineImpulseSource>();
+    }
 
     
     private void OnCollisionEnter (Collision collision) {
@@ -24,6 +30,7 @@ public class Ball : MonoBehaviour
         if (collision.gameObject.CompareTag("Border")) {
             audiosource.clip = clips[2];    
             audiosource.Play();
+            impulseSource.GenerateImpulse();
         }
         if (collision.gameObject.CompareTag("BottomBorder")) {
             gameController.LoseALife();

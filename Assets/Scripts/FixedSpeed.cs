@@ -17,7 +17,7 @@ public class FixedSpeed : MonoBehaviour
     private void FixedUpdate()
     {
         Rigidbody rb = GetComponent<Rigidbody>();
-        float fixedSpeed = 5f;
+        float fixedSpeed = 10f;
         rb.velocity = rb.velocity.normalized * fixedSpeed;
     }
 }
