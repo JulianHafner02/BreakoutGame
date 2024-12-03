@@ -4,14 +4,19 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
     [SerializeField]
     private int lives = 3; 
-    private int currentScore = 0;
     [SerializeField]
-    private TMP_Text livesTextInfo;
+    public Image[] heartImages; // Drag your heart Image objects here
+    [SerializeField]
+    public Sprite fullHeart;    // Drag your full heart sprite here
+    [SerializeField]
+    public Sprite emptyHeart;   // Drag your empty heart sprite here
+    private int currentScore = 0;
     [SerializeField]
     private TMP_Text scoreTextInfo;
     [SerializeField]
@@ -39,7 +44,6 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        livesTextInfo.text = "Balls: " + lives.ToString();
         scoreTextInfo.text = "Score: " + currentScore.ToString();
 
         CheckForEndOfGame();
@@ -47,10 +51,12 @@ public class GameController : MonoBehaviour
     }
 
     public void LoseALife() {
-       
-        lives--;
-        ResetBallAndPaddle();
         
+        lives--;
+        if (lives >= 0) {
+            heartImages[lives].sprite = emptyHeart;
+        }
+        ResetBallAndPaddle();
     }
 
     public void ResetBallAndPaddle() {
@@ -76,7 +82,7 @@ public class GameController : MonoBehaviour
     }
 
     public void CheckForEndOfGame () {
-        if (lives == 0) {
+        if (lives == -1) {
             SceneManager.LoadScene("GameOver");
         }
 
