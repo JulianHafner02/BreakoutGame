@@ -13,9 +13,11 @@ public class UI_Input : MonoBehaviour
     private TMP_InputField inputText;
 
     private TextMeshProUGUI mathq;
-    [SerializeField]
-    private GameController gameController;
     private int mathresult;
+
+    [SerializeField] private GameController gameController;
+    [SerializeField] private Animator equationAnimator;
+
 
 
 
@@ -60,5 +62,7 @@ public class UI_Input : MonoBehaviour
         mathq.text = number1 + " + " + number2 + " =";
         mathresult = number1 + number2;
         Debug.Log("Brickscript:" + mathresult);
+        equationAnimator.SetTrigger("ShowEquation");  // Setzt den Trigger im Animator Controller
+        
     }
 }
