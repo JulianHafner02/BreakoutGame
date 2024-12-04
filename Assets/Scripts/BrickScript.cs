@@ -32,7 +32,7 @@ public class BrickScript : MonoBehaviour
     public int mathResult;
     [SerializeField]
     private UI_Input input;
-
+    [SerializeField] private ParticleSystem particleEffect;
 
     //private Fields
     private int currentHealth;
@@ -79,10 +79,10 @@ public class BrickScript : MonoBehaviour
         director.Play();
         audioSource?.PlayOneShot(destructionSound);
         boxCollider.enabled = false;
-        
+        particleEffect.Stop();
         //destructionEffect?.Play();
-        
-       
+
+
         Destroy(gameObject, 4f);
     }
     
