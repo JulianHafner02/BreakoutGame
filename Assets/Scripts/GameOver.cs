@@ -11,10 +11,16 @@ public class GameOver : MonoBehaviour
        
         tryAgainButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => LoadLevel("LevelSelection"));
         
+        GameObject MainMenu = GameObject.Find("MainMenu");
+       
+        MainMenu.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(loadMainMenu);
     }
 
-  void LoadLevel(string levelName)
+    void LoadLevel(string levelName)
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(levelName);
+    }
+    void loadMainMenu() {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
 }

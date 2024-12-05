@@ -16,9 +16,14 @@ public class Evaluation : MonoBehaviour
     void Start()
     {        
         writeLevelEquations();
-        Debug.Log("Sum of correct equations:" + correctEquationCount);
-        Debug.Log("Sum of Equations:" + sumEquations);
         evaluationOutput();
+        GameObject returnButton = GameObject.Find("Return");
+        returnButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(OnClickReturn);
+    }
+
+    void OnClickReturn()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("LevelSelection");
     }
 
     public void writeLevelEquations() {
@@ -81,5 +86,9 @@ public class Evaluation : MonoBehaviour
         }
     }
 
+    public void TaskOnClick()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("LevelSelection");
+    }
     
 }
