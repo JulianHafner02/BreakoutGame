@@ -7,6 +7,7 @@ public class PaddleControl : MonoBehaviour
     [SerializeField]
     private float paddleSpeed = 10f;
     private Rigidbody ballRb;
+    [SerializeField] private ParticleSystem ballHit;
     void Update()
     {
         if (Time.timeScale == 0f)
@@ -29,16 +30,20 @@ public class PaddleControl : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        ballRb = collision.gameObject.GetComponent<Rigidbody>();
-        if (ballRb != null)
+        if (collision.gameObject.CompareTag("Ball"))
         {
-            //Get the exact point where the ball hit the paddle
-            Vector3 hitpoint = collision.contacts[0].point;
-
-            float hitfactor = (hitpoint.x - transform.position.x) / transform.localScale.x;
-
-            Vector3 newDirection = new Vector3(hitfactor, 1, 0).normalized;
-            ballRb.velocity = newDirection; 
+            ballRb = collision.gameObject.GetComponent<Rigidbody>();
+            
+            
+            if (ballRb != null)
+            {
+                Vector3 hitpoint = collision.contacts[0].point;
+                ballHit.transform.position = hitpoint;
+                ballHit.Play();
+                float hitfactor = (hitpoint.x - transform.position.x) / transform.localScale.x;
+                Vector3 newDirection = new Vector3(hitfactor, 1, 0).normalized;
+                ballRb.velocity = newDirection;
+            }
         }
     }
 

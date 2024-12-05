@@ -20,6 +20,11 @@ public class UI_Input : MonoBehaviour
 
     private int index = -1;
 
+    [SerializeField] private Animator equationAnimator;
+
+    [SerializeField] private AudioClip correctSound;
+    [SerializeField] private AudioClip incorrectSound;
+    [SerializeField] private AudioSource audioSource;
     private GameController.Equation[] equations;
 
     void Start() {
@@ -36,15 +41,19 @@ public class UI_Input : MonoBehaviour
             inputText.text = "";
             inputText.ActivateInputField();
             if (inputResult == mathresult) {
+                audioSource.PlayOneShot(correctSound);
                 mathq.text = "Correct";
                 mathq.color = Color.green;
                 gameController.AddScore(500);
                 equations[index].isCorrect = true;
+                Debug.Log(equations[index].equationString + " "+ equations[index].isCorrect + " " + equations[index].answer + " " + equations[index].result);
             } else {
+                audioSource.PlayOneShot(incorrectSound);
                 mathq.text = "Incorrect";
                 mathq.color = Color.red;
                 gameController.AddScore(-250);
                 equations[index].isCorrect = false;
+                Debug.Log(equations[index].equationString + " "+ equations[index].isCorrect + " " + equations[index].answer + " " + equations[index].result);
             }
         }
         
@@ -69,5 +78,6 @@ public class UI_Input : MonoBehaviour
         mathresult = number1 + number2;
         index += 1;
         equations[index] = new GameController.Equation(number1 + " + " + number2, mathresult, 0, false);
+        equationAnimator.SetTrigger("ShowEquation"); 
     }
 }

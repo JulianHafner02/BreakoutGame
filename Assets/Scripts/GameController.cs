@@ -170,6 +170,7 @@ public class GameController : MonoBehaviour
             currentSceneName = SceneManager.GetActiveScene().name;
             gameData sat = new gameData(currentSceneName,currentScore.ToString(),timerTextInfo.text,"Game Over");
             WriteArrayToFile(sat, filePath);
+            WriteEquationsToFile(equations, filePath);
             SceneManager.LoadScene("GameOver");
         }
 

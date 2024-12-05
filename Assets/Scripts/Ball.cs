@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Playables;
 
 public class Ball : MonoBehaviour
 {
@@ -11,26 +12,45 @@ public class Ball : MonoBehaviour
     private AudioSource audiosource;
     [SerializeField]
     private List<AudioClip> clips;
-  
-    private CinemachineImpulseSource impulseSource;
+    [SerializeField]
+    private CinemachineImpulseSource mainImpulseSource;
+    [SerializeField]
+    private CinemachineImpulseSource rightImpulseSource;
+    [SerializeField]
+    private CinemachineImpulseSource leftImpulseSource;
+    [SerializeField]
+    private PlayableDirector director;
 
     private void Start() {
-        impulseSource = GetComponent<CinemachineImpulseSource>();
+        
     }
 
     
     private void OnCollisionEnter (Collision collision) {
         if (collision.gameObject.CompareTag("Paddle")) {
+            director.Play();
             audiosource.clip = clips[0];
             audiosource.Play(); 
         }
         if (collision.gameObject.CompareTag("Brick")) {
-            gameController.AddScore(10);
+            director.Play();
+            mainImpulseSource.GenerateImpulse();
+            audiosource.clip = clips[1];
+            audiosource.Play();
         }
         if (collision.gameObject.CompareTag("Border")) {
             audiosource.clip = clips[2];    
             audiosource.Play();
-            impulseSource.GenerateImpulse();
+            if(collision.gameObject.name == "BorderRight") {
+                rightImpulseSource.GenerateImpulse();
+            }
+            else if(collision.gameObject.name == "BorderLeft") {
+                leftImpulseSource.GenerateImpulse();
+            }
+            else {
+                director.Play();
+                mainImpulseSource.GenerateImpulse();
+            }
         }
         if (collision.gameObject.CompareTag("BottomBorder")) {
             gameController.LoseALife();

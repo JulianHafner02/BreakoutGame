@@ -4,18 +4,30 @@ using UnityEngine;
 
 public class WallScript : MonoBehaviour
 {
+    [SerializeField] private float kickForce = 2f;
+    [SerializeField] private ParticleSystem ballHit;         
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
+            ContactPoint contact = collision.contacts[0];
+            Vector3 contactPosition = contact.point;
+
+            ballHit.transform.position = contactPosition;
+            ballHit.Play();
+
             Rigidbody ballRb = collision.gameObject.GetComponent<Rigidbody>();
-            if (ballRb != null)
+            Vector3 ballVelocity = ballRb.velocity;
+            Vector3 wallNormal = contact.normal;
+            
+            float dotProduct = Vector3.Dot(ballVelocity.normalized, wallNormal);
+
+            if (Mathf.Abs(dotProduct) >= 0.95)
             {
-                Vector3 normal = collision.contacts[0].normal;
-                if (Mathf.Abs(Vector3.Dot(normal, Vector3.up)) > 0.95f)
-                {
-                    ballRb.AddForce(Vector3.down * 50f, ForceMode.Impulse);
-                }
+                Vector3 kickDirection = Vector3.down;
+                ballRb.AddForce(kickDirection * kickForce, ForceMode.Impulse);
+
             }
         }
     }
