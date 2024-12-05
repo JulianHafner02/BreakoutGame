@@ -11,20 +11,26 @@ public class BrickScript : MonoBehaviour
 {
 
     //Brick Properties
-    [SerializeField]private int health = 3;
+    [SerializeField]private int health;
 
     [SerializeField]private float reflectingForce = 0.2f;
     [SerializeField]private BoxCollider boxCollider;
-    //[SerializeField]
-    //private ParticleSystem destructionEffect;
     [SerializeField]private AudioClip destructionSound;
     [SerializeField]private PlayableDirector director;
     [SerializeField]private bool isMathBrick = false;
     [SerializeField]private GameController gameController;
     [SerializeField]private UI_Input input;
     [SerializeField]private ParticleSystem explosion;
+    [SerializeField]private Material lowHealthMaterial;
+    [SerializeField]private Material invulnerableMaterial;
+    [SerializeField]private Material mathBrickMaterial;
+    [SerializeField]private MeshRenderer meshRenderer;
 
     public int mathResult;
+
+    private Boolean isInvulnerable = false;
+    private float timer = 0f;
+
 
 
     //private Fields
@@ -32,20 +38,19 @@ public class BrickScript : MonoBehaviour
     private AudioSource audioSource;
 
 
-
     // Start is called before the first frame update
     void Start()
     {
+        
         currentHealth = health;
         audioSource = GetComponent<AudioSource>();
 
     }
 
-    private void ReflectBall(Collision collision, Action<int> callback){
+    private void ReflectBall(Collision collision){
 
         Rigidbody ballRb = collision.gameObject.GetComponent<Rigidbody>();
         ballRb.AddForce(ballRb.velocity * reflectingForce, ForceMode.VelocityChange);
-        callback?.Invoke(1);
     }
 
     private int GenerateRandomNumber() {
@@ -58,38 +63,65 @@ public class BrickScript : MonoBehaviour
 
         currentHealth -= damage;
 
+        if(currentHealth == 1 && health == 2){
+            meshRenderer.material = lowHealthMaterial; 
+            explosion.Play();
+        }
         if(currentHealth <= 0){
             gameController.AddScore(100);
             HandleDestruction();
         }
-        
     }
 
     private void HandleDestruction(){
-         if(isMathBrick){
+        if(isMathBrick){
             MathEvent();
         }
         director.Play();
         audioSource?.PlayOneShot(destructionSound);
-        explosion.Play();
         boxCollider.enabled = false;
         
        
         
        
-        Destroy(gameObject, 4f);
+        Destroy(gameObject, 5f);
     }
     
     private void MathEvent(){
         input.InvokeMathEvent();
+        // Find all math bricks in the scene
+        BrickScript[] allBricks = GameObject.FindObjectsOfType<BrickScript>();
+
+        foreach (BrickScript brick in allBricks)
+        {
+            if (brick.isMathBrick)
+            {
+                brick.isInvulnerable = true;
+                brick.timer = 5f;
+                brick.meshRenderer.material = invulnerableMaterial;
+            }
+        }
+    }
+
+
+    private void Update() {
+        if(isInvulnerable){
+            timer -= Time.deltaTime;
+            if(timer <= 0f){
+                isInvulnerable = false;
+                meshRenderer.material = mathBrickMaterial;
+            }
+        }
     }
 
     private void OnCollisionEnter(Collision collision){
 
         if(collision.gameObject.CompareTag("Ball")){
-            ReflectBall(collision, (result) => {
-                TakeDamage(result);
-            });
+            ReflectBall(collision);
+            if(!isInvulnerable){
+                TakeDamage(1);
+            }                
+           
         }
 
     }
@@ -98,3 +130,5 @@ public class BrickScript : MonoBehaviour
         return mathResult;
     }
 }
+
+

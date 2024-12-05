@@ -140,9 +140,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e2a6f3342aa6ef94fbdd82b22f5ee99f, type: 2}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 743106268}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 695904292}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: gameController
       value: 
@@ -151,6 +159,10 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: e176c6bc95fb0e348bbc85197ea4701c, type: 3}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: lowHealthMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7debe4a6851d4c4c87da662519e65ac, type: 2}
     - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_Name
       value: Brick3 (13)
@@ -219,6 +231,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1555064860055981329, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
   m_PrefabInstance: {fileID: 1970334580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &25618729 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2879947420552076721, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+  m_PrefabInstance: {fileID: 1358509750}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &28553718 stripped
 Transform:
@@ -412,9 +429,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e2a6f3342aa6ef94fbdd82b22f5ee99f, type: 2}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 537594243}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 1328491856}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: gameController
       value: 
@@ -423,6 +448,10 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: e176c6bc95fb0e348bbc85197ea4701c, type: 3}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: lowHealthMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7debe4a6851d4c4c87da662519e65ac, type: 2}
     - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_Name
       value: Brick3 (7)
@@ -1126,6 +1155,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 963194230}
     - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 351389889}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
@@ -1133,6 +1166,14 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: 759e0868792b7014daf1360930dc49cf, type: 3}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: mathBrickMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 825c050ef12fe544184efe474656577b, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: invulnerableMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1162,9 +1203,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e2a6f3342aa6ef94fbdd82b22f5ee99f, type: 2}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 381642475}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 2093160747}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 381642473}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: gameController
       value: 
@@ -1173,6 +1226,10 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: e176c6bc95fb0e348bbc85197ea4701c, type: 3}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: lowHealthMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7debe4a6851d4c4c87da662519e65ac, type: 2}
     - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_Name
       value: Brick3 (9)
@@ -1235,7 +1292,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8468989345033556951, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2093160748}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3094887138234419350, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 381642475}
   m_SourcePrefab: {fileID: 100100000, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
 --- !u!4 &192101829 stripped
 Transform:
@@ -1313,6 +1373,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1555064860055981329, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
   m_PrefabInstance: {fileID: 257176531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &214621335 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2879947420552076721, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+  m_PrefabInstance: {fileID: 1725059752}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &236491954 stripped
 Transform:
@@ -1647,6 +1712,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 963194230}
     - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 267650589}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
@@ -1654,6 +1723,14 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: 759e0868792b7014daf1360930dc49cf, type: 3}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: mathBrickMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 825c050ef12fe544184efe474656577b, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: invulnerableMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1662,6 +1739,11 @@ PrefabInstance:
       addedObject: {fileID: 595684065}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+--- !u!23 &267650589 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2940977817072488273, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+  m_PrefabInstance: {fileID: 257176531}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &300285284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1744,9 +1826,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e2a6f3342aa6ef94fbdd82b22f5ee99f, type: 2}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 88639273}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 1393377540}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: gameController
       value: 
@@ -1755,6 +1845,10 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: e176c6bc95fb0e348bbc85197ea4701c, type: 3}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: lowHealthMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7debe4a6851d4c4c87da662519e65ac, type: 2}
     - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_Name
       value: Brick3 (3)
@@ -1930,6 +2024,11 @@ PrefabInstance:
       addedObject: {fileID: 192101829}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+--- !u!23 &351389889 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2940977817072488273, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+  m_PrefabInstance: {fileID: 184572448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &351486017
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,6 +2132,43 @@ RectTransform:
   m_AnchoredPosition: {x: -0.206, y: 0}
   m_SizeDelta: {x: 2, y: 0.7}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &381642470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3094887138234419350, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+  m_PrefabInstance: {fileID: 187438882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &381642473 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2879947420552076721, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+  m_PrefabInstance: {fileID: 187438882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &381642475
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381642470}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 120
+  m_CollisionDetection: 0
 --- !u!1001 &387521277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2268,6 +2404,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1555064860055981329, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
   m_PrefabInstance: {fileID: 643888478}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &446432393 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2940977817072488273, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+  m_PrefabInstance: {fileID: 1970334580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &465159598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2289,9 +2430,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e2a6f3342aa6ef94fbdd82b22f5ee99f, type: 2}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 1088470977}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 1452933260}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: gameController
       value: 
@@ -2300,6 +2449,10 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: e176c6bc95fb0e348bbc85197ea4701c, type: 3}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: lowHealthMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7debe4a6851d4c4c87da662519e65ac, type: 2}
     - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_Name
       value: Brick3 (2)
@@ -2710,6 +2863,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!23 &506411417 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2879947420552076721, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+  m_PrefabInstance: {fileID: 1755006762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &537594242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3848,6 +4006,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 919405533501017837, guid: 31c7d8334fe2a5444a2661981f3166c5, type: 3}
   m_PrefabInstance: {fileID: 626327580}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &636867578 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2940977817072488273, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+  m_PrefabInstance: {fileID: 1474303821}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &643888478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3925,6 +4088,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 963194230}
     - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 1841515426}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
@@ -3932,6 +4099,14 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: 759e0868792b7014daf1360930dc49cf, type: 3}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: mathBrickMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 825c050ef12fe544184efe474656577b, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: invulnerableMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4006,6 +4181,11 @@ ParticleSystem:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1632086567891716260, guid: 7bf3668bc5202064cb63f89776d5f508, type: 3}
   m_PrefabInstance: {fileID: 645181099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &695904292 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2879947420552076721, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+  m_PrefabInstance: {fileID: 4237771}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
@@ -5169,6 +5349,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 963194230}
     - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 1957621280}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
@@ -5176,6 +5360,14 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: 759e0868792b7014daf1360930dc49cf, type: 3}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: mathBrickMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 825c050ef12fe544184efe474656577b, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: invulnerableMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6255,7 +6447,7 @@ PrefabInstance:
     - target: {fileID: 2940977817072488273, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 18894d679c6fc2948a0a3fbbe887d74d, type: 2}
+      objectReference: {fileID: 2100000, guid: 825c050ef12fe544184efe474656577b, type: 2}
     - target: {fileID: 7447695900082680624, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -6273,6 +6465,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 963194230}
     - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 1701356023}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
@@ -6280,6 +6476,18 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: 759e0868792b7014daf1360930dc49cf, type: 3}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: lowHealthMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: mathBrickMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 825c050ef12fe544184efe474656577b, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: invulnerableMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6472,6 +6680,11 @@ PlayableDirector:
   m_ExposedReferences:
     m_References:
     - 567e84d360eb2c84b84673bde19311a1: {fileID: 578412497}
+--- !u!23 &1328491856 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2879947420552076721, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+  m_PrefabInstance: {fileID: 74391604}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1328916825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7919311088388861807, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
@@ -6498,9 +6711,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e2a6f3342aa6ef94fbdd82b22f5ee99f, type: 2}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 1540241538}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 25618729}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: gameController
       value: 
@@ -6509,6 +6730,10 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: e176c6bc95fb0e348bbc85197ea4701c, type: 3}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: lowHealthMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7debe4a6851d4c4c87da662519e65ac, type: 2}
     - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_Name
       value: Brick3 (6)
@@ -6639,6 +6864,16 @@ ParticleSystem:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1632086567891716260, guid: 7bf3668bc5202064cb63f89776d5f508, type: 3}
   m_PrefabInstance: {fileID: 1361486459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1393377540 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2879947420552076721, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+  m_PrefabInstance: {fileID: 308370584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1452933260 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2879947420552076721, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+  m_PrefabInstance: {fileID: 465159598}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1456431731
 PrefabInstance:
@@ -6799,6 +7034,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 963194230}
     - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 636867578}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
@@ -6806,6 +7045,14 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: 759e0868792b7014daf1360930dc49cf, type: 3}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: mathBrickMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 825c050ef12fe544184efe474656577b, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: invulnerableMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6999,9 +7246,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e2a6f3342aa6ef94fbdd82b22f5ee99f, type: 2}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 1155875454}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 2099550788}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: gameController
       value: 
@@ -7010,6 +7265,10 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: e176c6bc95fb0e348bbc85197ea4701c, type: 3}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: lowHealthMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7debe4a6851d4c4c87da662519e65ac, type: 2}
     - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_Name
       value: Brick3 (8)
@@ -7751,6 +8010,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 919405533501017837, guid: 31c7d8334fe2a5444a2661981f3166c5, type: 3}
   m_PrefabInstance: {fileID: 1666798766}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1701356023 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2940977817072488273, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+  m_PrefabInstance: {fileID: 1204922115}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1725059752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7772,9 +8036,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e2a6f3342aa6ef94fbdd82b22f5ee99f, type: 2}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 1931696499}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 214621335}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: gameController
       value: 
@@ -7783,6 +8055,10 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: e176c6bc95fb0e348bbc85197ea4701c, type: 3}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: lowHealthMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7debe4a6851d4c4c87da662519e65ac, type: 2}
     - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_Name
       value: Brick3 (12)
@@ -7976,9 +8252,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e2a6f3342aa6ef94fbdd82b22f5ee99f, type: 2}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 1850041605}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 506411417}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: gameController
       value: 
@@ -7987,6 +8271,10 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: e176c6bc95fb0e348bbc85197ea4701c, type: 3}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: lowHealthMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7debe4a6851d4c4c87da662519e65ac, type: 2}
     - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_Name
       value: Brick3 (4)
@@ -8136,6 +8424,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8468989345033556951, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
   m_PrefabInstance: {fileID: 1358509750}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1841515426 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2940977817072488273, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+  m_PrefabInstance: {fileID: 643888478}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1843226121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8284,6 +8577,11 @@ ParticleSystem:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7175932378407553948, guid: f1c7b265e2e78e548b4cf8becf9a943d, type: 3}
   m_PrefabInstance: {fileID: 1850041604}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1885673011 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2879947420552076721, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+  m_PrefabInstance: {fileID: 2003942951}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1890682782
 PrefabInstance:
@@ -8703,6 +9001,11 @@ PrefabInstance:
       addedObject: {fileID: 1361486461}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+--- !u!23 &1957621280 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2940977817072488273, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+  m_PrefabInstance: {fileID: 1087508347}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1970334580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8780,6 +9083,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 963194230}
     - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 446432393}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
@@ -8787,6 +9094,14 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: 759e0868792b7014daf1360930dc49cf, type: 3}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: mathBrickMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 825c050ef12fe544184efe474656577b, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: invulnerableMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -8888,9 +9203,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e2a6f3342aa6ef94fbdd82b22f5ee99f, type: 2}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 121914456}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: meshRenderer
+      value: 
+      objectReference: {fileID: 1885673011}
     - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: gameController
       value: 
@@ -8899,6 +9222,10 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: e176c6bc95fb0e348bbc85197ea4701c, type: 3}
+    - target: {fileID: 3797462876358446738, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+      propertyPath: lowHealthMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7debe4a6851d4c4c87da662519e65ac, type: 2}
     - target: {fileID: 5960598310191815270, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
       propertyPath: m_Name
       value: Brick3 (5)
@@ -9174,6 +9501,11 @@ ParticleSystem:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1632086567891716260, guid: 7bf3668bc5202064cb63f89776d5f508, type: 3}
   m_PrefabInstance: {fileID: 2094504808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2099550788 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2879947420552076721, guid: 0172223d5263b294a809ae4d3bf7d7df, type: 3}
+  m_PrefabInstance: {fileID: 1521293258}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2115979481 stripped
 Transform:
