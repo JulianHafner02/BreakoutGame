@@ -11,27 +11,20 @@ public class BrickScript : MonoBehaviour
 {
 
     //Brick Properties
-    [SerializeField]
-    private int health = 3;
-    [SerializeField]
-    private float reflectingForce = 0.2f;
-    [SerializeField]
-    private BoxCollider boxCollider;
+    [SerializeField]private int health = 3;
+
+    [SerializeField]private float reflectingForce = 0.2f;
+    [SerializeField]private BoxCollider boxCollider;
     //[SerializeField]
     //private ParticleSystem destructionEffect;
-    [SerializeField]
-    private AudioClip destructionSound;
-    [SerializeField]
-    private PlayableDirector director;
-    [SerializeField]
-    private bool isMathBrick = false;
-    [SerializeField]
-    private int scoreValue = 10;
-    [SerializeField]
-    private GameController gameController;
+    [SerializeField]private AudioClip destructionSound;
+    [SerializeField]private PlayableDirector director;
+    [SerializeField]private bool isMathBrick = false;
+    [SerializeField]private GameController gameController;
+    [SerializeField]private UI_Input input;
+    [SerializeField]private ParticleSystem explosion;
+
     public int mathResult;
-    [SerializeField]
-    private UI_Input input;
 
 
     //private Fields
@@ -78,9 +71,10 @@ public class BrickScript : MonoBehaviour
         }
         director.Play();
         audioSource?.PlayOneShot(destructionSound);
+        explosion.Play();
         boxCollider.enabled = false;
         
-        //destructionEffect?.Play();
+       
         
        
         Destroy(gameObject, 4f);

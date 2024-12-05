@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FixedSpeed : MonoBehaviour
 {
     Rigidbody rigidBody;
     public float thrust = 20f;
+    [SerializeField] private float speed = 20f;
 
     private void Start()
     {
@@ -17,7 +19,6 @@ public class FixedSpeed : MonoBehaviour
     private void FixedUpdate()
     {
         Rigidbody rb = GetComponent<Rigidbody>();
-        float fixedSpeed = 10f;
-        rb.velocity = rb.velocity.normalized * fixedSpeed;
+        rb.velocity = rb.velocity.normalized * speed;
     }
 }

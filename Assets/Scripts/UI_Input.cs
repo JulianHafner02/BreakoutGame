@@ -21,6 +21,11 @@ public class UI_Input : MonoBehaviour
     private int index = -1;
     private string filePath = "Assets/equations.txt";
 
+    [SerializeField] private Animator equationAnimator;
+
+    [SerializeField] private AudioClip correctSound;
+    [SerializeField] private AudioClip incorrectSound;
+    [SerializeField] private AudioSource audioSource;
 
     private Equation[] equations = new Equation[10];
 
@@ -37,12 +42,14 @@ public class UI_Input : MonoBehaviour
             inputText.text = "";
             inputText.ActivateInputField();
             if (inputResult == mathresult) {
+                audioSource.PlayOneShot(correctSound);
                 mathq.text = "Correct";
                 mathq.color = Color.green;
                 gameController.AddScore(500);
                 equations[index].isCorrect = true;
                 WriteArrayToFile(equations[index], filePath);
             } else {
+                audioSource.PlayOneShot(incorrectSound);
                 mathq.text = "Incorrect";
                 mathq.color = Color.red;
                 gameController.AddScore(-250);
@@ -101,5 +108,6 @@ public class UI_Input : MonoBehaviour
         mathresult = number1 + number2;
         index += 1;
         equations[index] = new Equation(number1 + " + " + number2, mathresult, 0, false);
+        equationAnimator.SetTrigger("ShowEquation"); 
     }
 }
