@@ -19,12 +19,11 @@ public class UI_Input : MonoBehaviour
     private int mathresult;
 
     private int index = -1;
-    private string filePath = "Assets/equations.txt";
 
-
-    private Equation[] equations = new Equation[10];
+    private GameController.Equation[] equations;
 
     void Start() {
+        equations = gameController.GetEquations();
         inputText = GameObject.FindGameObjectWithTag("Input").GetComponent<TMP_InputField>();
         inputText.ActivateInputField();
         mathq = GameObject.Find("Math").GetComponent<TextMeshProUGUI>();
@@ -41,15 +40,12 @@ public class UI_Input : MonoBehaviour
                 mathq.color = Color.green;
                 gameController.AddScore(500);
                 equations[index].isCorrect = true;
-                WriteArrayToFile(equations[index], filePath);
             } else {
                 mathq.text = "Incorrect";
                 mathq.color = Color.red;
                 gameController.AddScore(-250);
                 equations[index].isCorrect = false;
-                WriteArrayToFile(equations[index], filePath);
             }
-            Debug.Log(equations[index].equationString +" "+ equations[index].result +" "+ equations[index].answer + " " + equations[index].isCorrect); 
         }
         
     }
@@ -64,34 +60,6 @@ public class UI_Input : MonoBehaviour
         return number;
     }
 
-    public struct Equation {
-        public string equationString;
-        public int result;
-        public int answer;
-        public Boolean isCorrect;
-
-        public Equation(string equationString, int result, int answer, Boolean isCorrect) {
-
-            this.equationString = equationString;
-            this.result = result;
-            this.answer = answer;
-            this.isCorrect = isCorrect;
-        }
-
-        public override string ToString()
-        {
-            return $"{equationString},{result},{answer},{isCorrect}";
-        }
-    }
-
-    public static void WriteArrayToFile(Equation equation, string filePath)
-    {
-        using (StreamWriter writer = new StreamWriter(filePath, append: true))
-        {
-            writer.WriteLine(equation.ToString());
-        }
-    }
-
     public void InvokeMathEvent() {
         TextMeshProUGUI mathq = GameObject.Find("Math").GetComponent<TextMeshProUGUI>();
         mathq.color = Color.black;
@@ -100,6 +68,6 @@ public class UI_Input : MonoBehaviour
         mathq.text = number1 + " + " + number2 + " =";
         mathresult = number1 + number2;
         index += 1;
-        equations[index] = new Equation(number1 + " + " + number2, mathresult, 0, false);
+        equations[index] = new GameController.Equation(number1 + " + " + number2, mathresult, 0, false);
     }
 }
