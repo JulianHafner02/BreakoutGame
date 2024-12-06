@@ -104,8 +104,8 @@ public class UI_Input : MonoBehaviour
         else if(level == "Level3") {
             TextMeshProUGUI mathq = GameObject.Find("Math").GetComponent<TextMeshProUGUI>();
             mathq.color = Color.black;
-            int number1 = GenerateRandomNumber();
-            int number2 = GenerateRandomNumber();
+            int number1 = GenerateSmallRandomNumber();
+            int number2 = GenerateSmallRandomNumber();
             mathq.text = number1 + " * " + number2 + " =";
             mathresult = number1 * number2;
             index += 1;

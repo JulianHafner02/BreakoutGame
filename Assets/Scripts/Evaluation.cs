@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Evaluation : MonoBehaviour
 {
-    private string filePath = "Assets/Level1.txt";
+    private string filePath = "Assets/Level3.txt";
     private string filePath2 = "Assets/Level2.txt";
     private string filePath3 = "Assets/Level3.txt";
     [SerializeField]

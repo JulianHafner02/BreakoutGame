@@ -3619,7 +3619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 20
-  speed: 10
+  speed: 7
 --- !u!1 &578957185
 GameObject:
   m_ObjectHideFlags: 0
@@ -5385,7 +5385,7 @@ MonoBehaviour:
   ballStartPosition: {x: 0.2, y: -1.84, z: 0}
   paddleStartPosition: {x: 0.1567, y: -4.36, z: 0}
   paddle: {fileID: 1200297778}
-  backgroundMusic: {fileID: 8300000, guid: cd96850426208274a9cd4f4270ca6026, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: 3277fbe6cf256a64c9729f494d0da1d6, type: 3}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0

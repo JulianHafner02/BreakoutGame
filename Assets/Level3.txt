@@ -1,0 +1,8 @@
+Level:Level3,Score :6900,Time: 01:08,GameConclusion:Game Over
+7 * 9,63,63,True
+4 * 8,32,32,True
+7 * 8,56,0,False
+8 * 4,32,32,True
+2 * 6,12,12,True
+6 * 2,12,12,True
+6 * 9,54,54,True
