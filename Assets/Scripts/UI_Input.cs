@@ -27,7 +27,10 @@ public class UI_Input : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     private GameController.Equation[] equations;
 
+    private string level;
+
     void Start() {
+        level = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
         equations = gameController.GetEquations();
         inputText = GameObject.FindGameObjectWithTag("Input").GetComponent<TMP_InputField>();
         inputText.ActivateInputField();
@@ -65,19 +68,50 @@ public class UI_Input : MonoBehaviour
     }
 
     private int GenerateRandomNumber() {
-        int number = UnityEngine.Random.Range(1, 31);
+        int number = UnityEngine.Random.Range(1, 100);
         return number;
     }
 
+    private int GenerateSmallRandomNumber(){
+        int number1 = UnityEngine.Random.Range(1, 10);
+        return number1;
+    }
+
     public void InvokeMathEvent() {
-        TextMeshProUGUI mathq = GameObject.Find("Math").GetComponent<TextMeshProUGUI>();
-        mathq.color = Color.black;
-        int number1 = GenerateRandomNumber();
-        int number2 = GenerateRandomNumber();
-        mathq.text = number1 + " + " + number2 + " =";
-        mathresult = number1 + number2;
-        index += 1;
-        equations[index] = new GameController.Equation(number1 + " + " + number2, mathresult, 0, false);
-        equationAnimator.SetTrigger("ShowEquation"); 
+        
+        if(level == "Level1") {
+            TextMeshProUGUI mathq = GameObject.Find("Math").GetComponent<TextMeshProUGUI>();
+            mathq.color = Color.black;
+            int number1 = GenerateRandomNumber();
+            int number2 = GenerateRandomNumber();
+            mathq.text = number1 + " + " + number2 + " =";
+            mathresult = number1 + number2;
+            index += 1;
+            equations[index] = new GameController.Equation(number1 + " + " + number2, mathresult, 0, false);
+            equationAnimator.SetTrigger("ShowEquation"); 
+        }
+        else if(level == "Level2") {
+            TextMeshProUGUI mathq = GameObject.Find("Math").GetComponent<TextMeshProUGUI>();
+            mathq.color = Color.black;
+            int number1 = GenerateRandomNumber();
+            int number2 = GenerateRandomNumber();
+            mathq.text = number1 + " - " + number2 + " =";
+            mathresult = number1 - number2;
+            index += 1;
+            equations[index] = new GameController.Equation(number1 + " - " + number2, mathresult, 0, false);
+            equationAnimator.SetTrigger("ShowEquation"); 
+        }
+        else if(level == "Level3") {
+            TextMeshProUGUI mathq = GameObject.Find("Math").GetComponent<TextMeshProUGUI>();
+            mathq.color = Color.black;
+            int number1 = GenerateRandomNumber();
+            int number2 = GenerateRandomNumber();
+            mathq.text = number1 + " * " + number2 + " =";
+            mathresult = number1 * number2;
+            index += 1;
+            equations[index] = new GameController.Equation(number1 + " * " + number2, mathresult, 0, false);
+            equationAnimator.SetTrigger("ShowEquation"); 
+        }
+        
     }
 }

@@ -400,6 +400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 20
+  speed: 20
 --- !u!114 &6103378716883162271
 MonoBehaviour:
   m_ObjectHideFlags: 0
