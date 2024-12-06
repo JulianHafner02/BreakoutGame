@@ -12,7 +12,7 @@ public class FixedSpeed : MonoBehaviour
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
-        originalSpeed = speed; // Speichere die Originalgeschwindigkeit
+        originalSpeed = speed; 
         rigidBody.AddForce(Vector3.down);
     }
 
@@ -22,19 +22,19 @@ public class FixedSpeed : MonoBehaviour
         rb.velocity = rb.velocity.normalized * speed;
     }
 
-    // Methode zum Ändern der Geschwindigkeit
+   
     public void SetSpeed(float newSpeed, float duration)
     {
-        StopAllCoroutines(); // Stoppe alle laufenden Coroutines, um Überschneidungen zu vermeiden
+        StopAllCoroutines(); 
         StartCoroutine(AdjustSpeedTemporarily(newSpeed, duration));
     }
 
-    // Coroutine zum temporären Ändern der Geschwindigkeit
+    
     private IEnumerator AdjustSpeedTemporarily(float newSpeed, float duration)
     {
-        speed = newSpeed; // Setze die neue Geschwindigkeit
-        yield return new WaitForSeconds(duration); // Warte für die angegebene Dauer
-        speed = originalSpeed; // Setze die Geschwindigkeit zurück auf den ursprünglichen Wert
+        speed = newSpeed; 
+        yield return new WaitForSeconds(duration); 
+        speed = originalSpeed; 
         Debug.Log("Geschwindigkeit zurückgesetzt auf ursprüngliche Geschwindigkeit.");
     }
 }

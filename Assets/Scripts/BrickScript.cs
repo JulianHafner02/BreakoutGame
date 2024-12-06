@@ -69,18 +69,22 @@ public class BrickScript : MonoBehaviour
         if (isMathBrick)
         {
             MathEvent();
+            SpawnPowerUp();
         }
         director.Play();
         audioSource?.PlayOneShot(destructionSound);
         explosion.Play();
         boxCollider.enabled = false;
 
-        // Drop power-up with a 30% chance
-        float dropChance = UnityEngine.Random.Range(0f, 1f);
-        if (dropChance <= 1f && powerUpPrefabs.Length > 0)
+        if(!isMathBrick)
         {
-            SpawnPowerUp();
+            float dropChance = UnityEngine.Random.Range(0f, 1f);
+            if (dropChance <= 0.3f && powerUpPrefabs.Length > 0)
+            {
+                SpawnPowerUp();
+            }
         }
+        
 
         Destroy(gameObject, 4f);
     }
@@ -119,7 +123,17 @@ public class BrickScript : MonoBehaviour
                 GameObject powerUpInstance = Instantiate(selectedPowerUpPrefab, transform.position, Quaternion.identity);
                 powerUpInstance.transform.SetParent(null);
                 powerUpInstance.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
-                powerUpInstance.transform.Rotate(0, 90, 0);
+
+                if (selectedPowerUpPrefab.CompareTag("XL_Pad"))
+                {
+                    powerUpInstance.transform.Rotate(0, 180, 0); // XL_Pad um 180 Grad drehen
+                    powerUpInstance.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+                }
+                else
+                {
+                    powerUpInstance.transform.Rotate(0, 90, 0); // Andere Power-Ups um 90 Grad drehen
+                    powerUpInstance.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+                }
                 // Add the PowerUpScript to handle movement and collision
                 PowerUpScript powerUpScript = powerUpInstance.AddComponent<PowerUpScript>();
 

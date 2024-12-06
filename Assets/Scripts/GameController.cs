@@ -53,19 +53,19 @@ public class GameController : MonoBehaviour
 
     private IEnumerator TemporaryChangeMusic(AudioClip newMusic, float duration)
     {
-        // Ändere die Hintergrundmusik
+      
         audioSource.clip = newMusic;
         audioSource.Play();
 
-        // Warte für die angegebene Dauer
+        
         yield return new WaitForSeconds(duration);
 
-        // Setze die Originalmusik wieder zurück
+       
         audioSource.clip = backgroundMusic;
         audioSource.Play();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         scoreTextInfo.text = "Score: " + currentScore.ToString();
@@ -89,7 +89,7 @@ public class GameController : MonoBehaviour
 
         if (lives < heartImages.Length)
         {
-            heartImages[lives].sprite = fullHeart; // Setze das nächste Herz auf voll
+            heartImages[lives].sprite = fullHeart; 
             lives++;
             Debug.Log("Leben hinzugefügt. Aktuelle Leben: " + lives);
 

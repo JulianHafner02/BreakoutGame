@@ -13,6 +13,7 @@ TagManager:
   - PowerUp
   - Heart
   - HourGlass
+  - XL_Pad
   layers:
   - Default
   - TransparentFX
