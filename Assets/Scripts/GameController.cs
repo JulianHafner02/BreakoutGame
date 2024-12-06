@@ -29,6 +29,11 @@ public class GameController : MonoBehaviour
     private PaddleControl paddle;
     [SerializeField]
     private AudioClip backgroundMusic;
+    [SerializeField]
+    public AudioClip slowMotionMusic;
+    [SerializeField]
+    private AudioSource audioSource;
+
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +44,25 @@ public class GameController : MonoBehaviour
         audioSource.volume = 0.5f;
         audioSource.Play();
         
+    }
+
+    public void ChangeBackgroundMusicForDuration(AudioClip newMusic, float duration)
+    {
+        StartCoroutine(TemporaryChangeMusic(newMusic, duration));
+    }
+
+    private IEnumerator TemporaryChangeMusic(AudioClip newMusic, float duration)
+    {
+        // Ändere die Hintergrundmusik
+        audioSource.clip = newMusic;
+        audioSource.Play();
+
+        // Warte für die angegebene Dauer
+        yield return new WaitForSeconds(duration);
+
+        // Setze die Originalmusik wieder zurück
+        audioSource.clip = backgroundMusic;
+        audioSource.Play();
     }
 
     // Update is called once per frame
@@ -58,6 +82,26 @@ public class GameController : MonoBehaviour
         }
         ResetBallAndPaddle();
     }
+
+    public void AddLife()
+    {
+        Debug.Log("Add Life wird ausgeführt");
+
+        if (lives < heartImages.Length)
+        {
+            heartImages[lives].sprite = fullHeart; // Setze das nächste Herz auf voll
+            lives++;
+            Debug.Log("Leben hinzugefügt. Aktuelle Leben: " + lives);
+
+        }
+        else
+        {
+            Debug.Log("Maximale Anzahl der Leben erreicht.");
+        }
+
+        
+    }
+
 
     public void ResetBallAndPaddle() {
         if(GameObject.FindGameObjectWithTag("Ball")) {
@@ -90,4 +134,6 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene("WinScreen");
         }
     }
+
+    
 }
