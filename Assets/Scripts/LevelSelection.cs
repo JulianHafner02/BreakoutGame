@@ -17,11 +17,13 @@ public class LevelSelection : MonoBehaviour
         var level2Button = GameObject.Find("Level2Button");
         var level3Button = GameObject.Find("Level3Button");
         var evaluationButton = GameObject.Find("EvaluationButton");
+        GameObject MainMenu = GameObject.Find("MainMenu");
 
         level1Button.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => LoadLevel("Level1"));
         level2Button.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => LoadLevel("Level2"));
         level3Button.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => LoadLevel("Level3"));
         evaluationButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => LoadLevel("EvaPage"));
+        MainMenu.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(loadMainMenu);
     }
 
     void LoadLevel(string levelName)
@@ -29,5 +31,7 @@ public class LevelSelection : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(levelName);
     }
     
-
+    void loadMainMenu() {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+    }
 }
