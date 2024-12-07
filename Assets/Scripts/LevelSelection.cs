@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class LevelSelection : MonoBehaviour
 {
+    [SerializeField]
+    private AudioClip levelselectionSound;
     // Start is called before the first frame update
     public void Start()
     {
+        var audioSource = GetComponent<AudioSource>();
+        audioSource.clip = levelselectionSound;
+        audioSource.loop = true;
+        audioSource.Play();
         var level1Button = GameObject.Find("Level1Button");
         var level2Button = GameObject.Find("Level2Button");
         var level3Button = GameObject.Find("Level3Button");
