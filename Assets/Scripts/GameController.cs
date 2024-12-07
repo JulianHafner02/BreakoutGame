@@ -34,13 +34,25 @@ public class GameController : MonoBehaviour
     private PaddleControl paddle;
     [SerializeField]
     private AudioClip backgroundMusic;
-    private string filePath = "Assets/equations.txt";
+    [SerializeField]
+    public AudioClip slowMotionMusic;
+    [SerializeField]
+    private AudioSource audioSource;
+
+
+    private string filePath = "Assets/Level1.txt";
+    private string filePath2 = "Assets/Level2.txt";
+    private string filePath3 = "Assets/Level3.txt";
     private string currentSceneName;
+
+    private string level;
     
     public Equation[] equations = new Equation[10];
 
+
     // Start is called before the first frame update
     void Start() {
+        level = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
         elapsedTime = 0f;
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.clip = backgroundMusic;
@@ -49,7 +61,26 @@ public class GameController : MonoBehaviour
         audioSource.Play();
     }
 
-    // Update is called once per frame
+    public void ChangeBackgroundMusicForDuration(AudioClip newMusic, float duration)
+    {
+        StartCoroutine(TemporaryChangeMusic(newMusic, duration));
+    }
+
+    private IEnumerator TemporaryChangeMusic(AudioClip newMusic, float duration)
+    {
+      
+        audioSource.clip = newMusic;
+        audioSource.Play();
+
+        
+        yield return new WaitForSeconds(duration);
+
+       
+        audioSource.clip = backgroundMusic;
+        audioSource.Play();
+    }
+
+    
     void Update()
     {
         elapsedTime += Time.deltaTime;
@@ -127,7 +158,15 @@ public class GameController : MonoBehaviour
             if (equations[i].equationString == "" || equations[i].equationString == null) {
                 break;
             } 
-            WriteArrayIndexToFile(equations[i],filePath);
+            if(level == "Level1") {
+                WriteArrayIndexToFile(equations[i],filePath);
+            }
+            else if(level == "Level2") {
+                WriteArrayIndexToFile(equations[i],filePath2);
+            }
+            else if(level == "Level3") {
+                WriteArrayIndexToFile(equations[i],filePath3);
+            } 
         }
     }
 
@@ -139,6 +178,26 @@ public class GameController : MonoBehaviour
         }
         ResetBallAndPaddle();
     }
+
+    public void AddLife()
+    {
+        Debug.Log("Add Life wird ausgef�hrt");
+
+        if (lives < heartImages.Length)
+        {
+            heartImages[lives].sprite = fullHeart; 
+            lives++;
+            Debug.Log("Leben hinzugef�gt. Aktuelle Leben: " + lives);
+
+        }
+        else
+        {
+            Debug.Log("Maximale Anzahl der Leben erreicht.");
+        }
+
+        
+    }
+
 
     public void ResetBallAndPaddle() {
         if(GameObject.FindGameObjectWithTag("Ball")) {
@@ -169,17 +228,40 @@ public class GameController : MonoBehaviour
         if (lives == -1) {
             currentSceneName = SceneManager.GetActiveScene().name;
             gameData sat = new gameData(currentSceneName,currentScore.ToString(),timerTextInfo.text,"Game Over");
-            WriteArrayToFile(sat, filePath);
-            WriteEquationsToFile(equations, filePath);
+            if(level == "Level1") {
+                WriteArrayToFile(sat, filePath);
+                WriteEquationsToFile(equations, filePath);
+            }
+            else if(level == "Level2") {
+                WriteArrayToFile(sat, filePath2);
+                WriteEquationsToFile(equations, filePath2);
+            }
+            else if(level == "Level3") {
+                WriteArrayToFile(sat, filePath3);
+                WriteEquationsToFile(equations, filePath3);
+            }
+            
             SceneManager.LoadScene("GameOver");
         }
 
         if (GameObject.FindGameObjectsWithTag("Brick").Length == 0) {
             currentSceneName = SceneManager.GetActiveScene().name;
             gameData sat = new gameData(currentSceneName,currentScore.ToString(),timerTextInfo.text,"Cleared");
-            WriteArrayToFile(sat, filePath);
-            WriteEquationsToFile(equations, filePath);
+            if(level == "Level1") {
+                WriteArrayToFile(sat, filePath);
+                WriteEquationsToFile(equations, filePath);
+            }
+            else if(level == "Level2") {
+                WriteArrayToFile(sat, filePath2);
+                WriteEquationsToFile(equations, filePath2);
+            }
+            else if(level == "Level3") {
+                WriteArrayToFile(sat, filePath3);
+                WriteEquationsToFile(equations, filePath3);
+            }
             SceneManager.LoadScene("WinScreen");
         }
     }
+
+    
 }

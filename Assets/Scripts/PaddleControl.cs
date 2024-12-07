@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class PaddleControl : MonoBehaviour
 {
+
     [SerializeField]
     private float paddleSpeed = 10f;
     private Rigidbody ballRb;
     [SerializeField] private ParticleSystem ballHit;
+    private Vector3 originalScale;
+
+    void Start()
+    {
+        // Speichere die ursprüngliche Größe des Paddles
+        originalScale = transform.localScale;
+    }
+
     void Update()
     {
         if (Time.timeScale == 0f)
@@ -60,6 +69,30 @@ public class PaddleControl : MonoBehaviour
         ballRb.useGravity = true;
         ballRb.AddForce(new Vector2(Random.Range(-0.5f,0.5f), -1f).normalized * 5f,ForceMode.Impulse);
         ballRb.useGravity = false;
+    }
+
+    public void SetPaddleScaleTemporarily(float scaleMultiplier, float duration)
+    {
+     
+        StopAllCoroutines();
+        
+        StartCoroutine(AdjustPaddleScaleTemporarily(scaleMultiplier, duration));
+    }
+
+    
+    private IEnumerator AdjustPaddleScaleTemporarily(float scaleMultiplier, float duration)
+    {
+       
+        Vector3 newScale = originalScale;
+        newScale.x *= scaleMultiplier;
+        newScale.y *= scaleMultiplier;
+        transform.localScale = newScale;
+
+     
+        yield return new WaitForSeconds(duration);
+
+       
+        transform.localScale = originalScale;
     }
 }
 
