@@ -6,13 +6,13 @@ using NUnit.Framework.Interfaces;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.Timeline;  // F�ge diesen Namespace hinzu
+
+
 
 public class BrickScript : MonoBehaviour
 {
-
-    //Brick Properties
     [SerializeField]private int health;
-
     [SerializeField]private float reflectingForce = 0.2f;
     [SerializeField]private BoxCollider boxCollider;
     [SerializeField]private AudioClip destructionSound;
@@ -26,26 +26,27 @@ public class BrickScript : MonoBehaviour
     [SerializeField]private Material mathBrickMaterial;
     [SerializeField]private MeshRenderer meshRenderer;
 
-    public int mathResult;
+    // Referenz auf mehrere Power-Up Prefabs
+    [SerializeField] private GameObject[] powerUpPrefabs;
 
+    // Referenz zur gespeicherten Timeline (Playable Asset)
+    [SerializeField] private PlayableAsset hourGlassTimeline;
+
+
+    public int mathResult;
     private Boolean isInvulnerable = false;
     private float timer = 0f;
-
-
-
-    //private Fields
     private int currentHealth;
     private AudioSource audioSource;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         
         currentHealth = health;
         audioSource = GetComponent<AudioSource>();
-
     }
+
+
 
     private void ReflectBall(Collision collision){
 
@@ -53,41 +54,55 @@ public class BrickScript : MonoBehaviour
         ballRb.AddForce(ballRb.velocity * reflectingForce, ForceMode.VelocityChange);
     }
 
-    private int GenerateRandomNumber() {
+    private int GenerateRandomNumber()
+    {
         int number = UnityEngine.Random.Range(1, 31);
         return number;
     }
 
-
-    public void TakeDamage(int damage){
-
+    public void TakeDamage(int damage)
+    {
         currentHealth -= damage;
+
 
         if(currentHealth == 1 && health == 2){
             meshRenderer.material = lowHealthMaterial; 
             explosion.Play();
         }
         if(currentHealth <= 0){
+
             gameController.AddScore(100);
             HandleDestruction();
         }
     }
 
+
     private void HandleDestruction(){
         if(isMathBrick){
+
             MathEvent();
+            SpawnPowerUp();
         }
         director.Play();
         audioSource?.PlayOneShot(destructionSound);
         boxCollider.enabled = false;
+
+        if(!isMathBrick)
+        {
+            float dropChance = UnityEngine.Random.Range(0f, 1f);
+            if (dropChance <= 0.3f && powerUpPrefabs.Length > 0)
+            {
+                SpawnPowerUp();
+            }
+        }
         
-       
-        
-       
+
         Destroy(gameObject, 5f);
+
     }
-    
-    private void MathEvent(){
+
+    private void MathEvent()
+    {
         input.InvokeMathEvent();
         // Find all math bricks in the scene
         BrickScript[] allBricks = GameObject.FindObjectsOfType<BrickScript>();
@@ -114,6 +129,7 @@ public class BrickScript : MonoBehaviour
         }
     }
 
+
     private void OnCollisionEnter(Collision collision){
 
         if(collision.gameObject.CompareTag("Ball")){
@@ -123,12 +139,70 @@ public class BrickScript : MonoBehaviour
             }                
            
         }
-
     }
-    
-    public int GetMathResult(){
+
+    public int GetMathResult()
+    {
         return mathResult;
     }
+
+
+    private void SpawnPowerUp()
+    {
+        if (powerUpPrefabs.Length > 0)
+        {
+            // Zuf�llig ein Power-Up aus dem Array ausw�hlen
+            int randomIndex = UnityEngine.Random.Range(0, powerUpPrefabs.Length);
+            GameObject selectedPowerUpPrefab = powerUpPrefabs[randomIndex];
+
+            if (selectedPowerUpPrefab != null)
+            {
+                // Instantiate the selected power-up prefab at the brick's position
+                GameObject powerUpInstance = Instantiate(selectedPowerUpPrefab, transform.position, Quaternion.identity);
+                powerUpInstance.transform.SetParent(null);
+                powerUpInstance.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+
+                if (selectedPowerUpPrefab.CompareTag("XL_Pad"))
+                {
+                    powerUpInstance.transform.Rotate(0, 180, 0); // XL_Pad um 180 Grad drehen
+                    powerUpInstance.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+                }
+                else
+                {
+                    powerUpInstance.transform.Rotate(0, 90, 0); // Andere Power-Ups um 90 Grad drehen
+                    powerUpInstance.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+                }
+                // Add the PowerUpScript to handle movement and collision
+                PowerUpScript powerUpScript = powerUpInstance.AddComponent<PowerUpScript>();
+
+                // Get the PlayableDirector from the instantiated object, if applicable
+                PlayableDirector playableDirector = powerUpInstance.GetComponentInChildren<PlayableDirector>();
+                if (playableDirector != null && hourGlassTimeline != null)
+                {
+                    playableDirector.playableAsset = hourGlassTimeline;
+
+                    // Update the bindings to use the new instance
+                    foreach (var output in hourGlassTimeline.outputs)
+                    {
+                        if (output.sourceObject is AnimationTrack animationTrack)
+                        {
+                            playableDirector.SetGenericBinding(animationTrack, powerUpInstance);
+                        }
+                    }
+
+                    playableDirector.Play();
+                }
+
+                // Set Rigidbody to kinematic to avoid physics interactions
+                Rigidbody rb = powerUpInstance.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.isKinematic = true;
+                }
+            }
+        }
+    }
+
 }
 
 

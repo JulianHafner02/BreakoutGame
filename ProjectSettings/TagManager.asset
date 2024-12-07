@@ -10,6 +10,10 @@ TagManager:
   - Ball
   - Brick
   - Input
+  - PowerUp
+  - Heart
+  - HourGlass
+  - XL_Pad
   layers:
   - Default
   - TransparentFX

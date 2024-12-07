@@ -34,6 +34,12 @@ public class GameController : MonoBehaviour
     private PaddleControl paddle;
     [SerializeField]
     private AudioClip backgroundMusic;
+    [SerializeField]
+    public AudioClip slowMotionMusic;
+    [SerializeField]
+    private AudioSource audioSource;
+
+
     private string filePath = "Assets/Level1.txt";
     private string filePath2 = "Assets/Level2.txt";
     private string filePath3 = "Assets/Level3.txt";
@@ -42,6 +48,7 @@ public class GameController : MonoBehaviour
     private string level;
     
     public Equation[] equations = new Equation[10];
+
 
     // Start is called before the first frame update
     void Start() {
@@ -54,7 +61,26 @@ public class GameController : MonoBehaviour
         audioSource.Play();
     }
 
-    // Update is called once per frame
+    public void ChangeBackgroundMusicForDuration(AudioClip newMusic, float duration)
+    {
+        StartCoroutine(TemporaryChangeMusic(newMusic, duration));
+    }
+
+    private IEnumerator TemporaryChangeMusic(AudioClip newMusic, float duration)
+    {
+      
+        audioSource.clip = newMusic;
+        audioSource.Play();
+
+        
+        yield return new WaitForSeconds(duration);
+
+       
+        audioSource.clip = backgroundMusic;
+        audioSource.Play();
+    }
+
+    
     void Update()
     {
         elapsedTime += Time.deltaTime;
@@ -153,6 +179,26 @@ public class GameController : MonoBehaviour
         ResetBallAndPaddle();
     }
 
+    public void AddLife()
+    {
+        Debug.Log("Add Life wird ausgef�hrt");
+
+        if (lives < heartImages.Length)
+        {
+            heartImages[lives].sprite = fullHeart; 
+            lives++;
+            Debug.Log("Leben hinzugef�gt. Aktuelle Leben: " + lives);
+
+        }
+        else
+        {
+            Debug.Log("Maximale Anzahl der Leben erreicht.");
+        }
+
+        
+    }
+
+
     public void ResetBallAndPaddle() {
         if(GameObject.FindGameObjectWithTag("Ball")) {
             GameObject.FindGameObjectWithTag("Ball").transform.position = ballStartPosition;
@@ -216,4 +262,6 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene("WinScreen");
         }
     }
+
+    
 }
