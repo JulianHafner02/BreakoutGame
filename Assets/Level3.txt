@@ -1,2 +1,0 @@
-Level:Level3,Score :650,Time: 00:28,GameConclusion:Game Over
-9 * 7,63,2,False
