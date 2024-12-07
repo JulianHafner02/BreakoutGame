@@ -381,7 +381,7 @@ Transform:
   m_GameObject: {fileID: 51616688}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.000017414575, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -563,6 +563,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 2210070622902558211, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
       propertyPath: m_Name
       value: Brick6 (4)
@@ -632,6 +648,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (22)
@@ -807,6 +839,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (18)
@@ -925,6 +973,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (16)
@@ -1433,6 +1497,14 @@ PrefabInstance:
       propertyPath: invulnerableMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1458,6 +1530,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 2210070622902558211, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
       propertyPath: m_Name
       value: Brick6 (12)
@@ -1659,6 +1747,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (27)
@@ -1763,6 +1867,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 2210070622902558211, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
       propertyPath: m_Name
       value: Brick6 (14)
@@ -2157,6 +2277,80 @@ Transform:
   - {fileID: 2139328899}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &433970759
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1124013607206831202, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124013607206831202, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124013607206831202, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124013607206831202, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.77577734
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124013607206831202, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124013607206831202, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6310067
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124013607206831202, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124013607206831202, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124013607206831202, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 78.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124013607206831202, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287380956195199246, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: m_Name
+      value: Heart
+      objectReference: {fileID: 0}
+    - target: {fileID: 2410185407911001440, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 963194231}
+    - target: {fileID: 2410185407911001440, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 963194229}
+    - target: {fileID: 5669585378954298655, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+--- !u!1 &433970760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1287380956195199246, guid: e23e28ae71245d0499a572e20ff0edd1, type: 3}
+  m_PrefabInstance: {fileID: 433970759}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &434403527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2173,6 +2367,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (17)
@@ -2293,6 +2503,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1
@@ -2572,6 +2798,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (13)
@@ -2901,6 +3143,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (11)
@@ -3619,7 +3877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 20
-  speed: 7
+  speed: 10
 --- !u!1 &578957185
 GameObject:
   m_ObjectHideFlags: 0
@@ -3996,6 +4254,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 2210070622902558211, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
       propertyPath: m_Name
       value: Brick6 (6)
@@ -4150,6 +4424,14 @@ PrefabInstance:
       propertyPath: invulnerableMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4334,6 +4616,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (9)
@@ -4493,6 +4791,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1632086567891716260, guid: 7bf3668bc5202064cb63f89776d5f508, type: 3}
   m_PrefabInstance: {fileID: 745079414}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &765763298
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 88693562287185954, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_Name
+      value: Hourglass
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173985173532489782, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173985173532489782, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.6368
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173985173532489782, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173985173532489782, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6939624
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173985173532489782, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173985173532489782, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7200113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173985173532489782, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173985173532489782, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173985173532489782, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -92.111
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173985173532489782, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4979007130758901342, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5553929732524691146, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333748085480043825, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 963194231}
+    - target: {fileID: 6333748085480043825, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 963194229}
+    - target: {fileID: 7005572139443941507, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278753476699325441, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721054992994284155, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+--- !u!1 &765763299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 88693562287185954, guid: 00a9b516a9dbe944489f427e417210c8, type: 3}
+  m_PrefabInstance: {fileID: 765763298}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &773737650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7919311088388861807, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
@@ -4514,6 +4902,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (19)
@@ -4784,6 +5188,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (8)
@@ -4888,6 +5308,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 2210070622902558211, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
       propertyPath: m_Name
       value: Brick6 (2)
@@ -5386,6 +5822,8 @@ MonoBehaviour:
   paddleStartPosition: {x: 0.1567, y: -4.36, z: 0}
   paddle: {fileID: 1200297778}
   backgroundMusic: {fileID: 8300000, guid: 3277fbe6cf256a64c9729f494d0da1d6, type: 3}
+  slowMotionMusic: {fileID: 8300000, guid: 511ba5e402238cd45a6bcba50d497773, type: 3}
+  audioSource: {fileID: 963194231}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5627,6 +6065,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 2210070622902558211, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
       propertyPath: m_Name
       value: Brick6 (13)
@@ -5776,6 +6230,14 @@ PrefabInstance:
       propertyPath: invulnerableMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6063,6 +6525,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (12)
@@ -6596,6 +7074,14 @@ PrefabInstance:
       propertyPath: invulnerableMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6683,6 +7169,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 2210070622902558211, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
       propertyPath: m_Name
       value: Brick6 (1)
@@ -6752,6 +7254,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (14)
@@ -6907,6 +7425,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (10)
@@ -7016,6 +7550,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 2210070622902558211, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
       propertyPath: m_Name
       value: Brick6 (15)
@@ -7153,6 +7703,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 2210070622902558211, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
       propertyPath: m_Name
       value: Brick6 (5)
@@ -7441,6 +8007,14 @@ PrefabInstance:
       propertyPath: invulnerableMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -7613,6 +8187,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1555543839
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3099892077156306996, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: m_Name
+      value: XL_Pad
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654409690755806601, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034727523659119143, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 963194231}
+    - target: {fileID: 7034727523659119143, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 963194229}
+    - target: {fileID: 8167867469677003664, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167867469677003664, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.593
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167867469677003664, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167867469677003664, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167867469677003664, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167867469677003664, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167867469677003664, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167867469677003664, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167867469677003664, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167867469677003664, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+--- !u!1 &1555543840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3099892077156306996, guid: 4c549070b316c9845a25fc9da6d135c8, type: 3}
+  m_PrefabInstance: {fileID: 1555543839}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1601056592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7629,6 +8277,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (21)
@@ -7817,6 +8481,14 @@ PrefabInstance:
       propertyPath: invulnerableMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -7847,6 +8519,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 2210070622902558211, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
       propertyPath: m_Name
       value: Brick6 (3)
@@ -8120,6 +8808,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (5)
@@ -8283,6 +8987,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 2210070622902558211, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
       propertyPath: m_Name
       value: Brick6 (9)
@@ -8348,6 +9068,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 1767243052613534496, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 2210070622902558211, guid: 132f06360d1dbaa4cb3ded1fba0a3486, type: 3}
       propertyPath: m_Name
       value: Brick6 (11)
@@ -8489,6 +9225,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (28)
@@ -8597,6 +9349,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (23)
@@ -8872,6 +9640,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (6)
@@ -9066,6 +9850,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 268350692197652605, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 663332776875089330, guid: 70e62b28e4fea9b45996957cddc69d3a, type: 3}
       propertyPath: m_Name
       value: Brick1 (15)
@@ -9259,6 +10059,14 @@ PrefabInstance:
       propertyPath: invulnerableMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 39653399865be654bac2d564066a89d6, type: 2}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798533172425735114, guid: dd8126b6cad9ad84b8b4f849582ec0d1, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -9845,6 +10653,22 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 4448542548875012075, guid: c7a7652395a2fa84eb41445c27c046cb, type: 3}
+      propertyPath: powerUpPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448542548875012075, guid: c7a7652395a2fa84eb41445c27c046cb, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 765763299}
+    - target: {fileID: 4448542548875012075, guid: c7a7652395a2fa84eb41445c27c046cb, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 433970760}
+    - target: {fileID: 4448542548875012075, guid: c7a7652395a2fa84eb41445c27c046cb, type: 3}
+      propertyPath: 'powerUpPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1555543840}
     - target: {fileID: 6374670148151605589, guid: c7a7652395a2fa84eb41445c27c046cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.07000005
@@ -9964,3 +10788,6 @@ SceneRoots:
   - {fileID: 1087480338}
   - {fileID: 337616563}
   - {fileID: 1418724202}
+  - {fileID: 765763298}
+  - {fileID: 433970759}
+  - {fileID: 1555543839}

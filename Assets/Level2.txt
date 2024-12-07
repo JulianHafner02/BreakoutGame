@@ -1,8 +1,0 @@
-Level:Level2,Score :5500,Time: 01:57,GameConclusion:Cleared
-19 - 81,-62,0,False
-81 - 40,41,41,True
-96 - 98,-2,-2,True
-94 - 34,60,60,True
-93 - 27,66,66,True
-97 - 75,22,22,True
-28 - 47,-19,-19,True
