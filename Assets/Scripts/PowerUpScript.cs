@@ -36,14 +36,14 @@ public class PowerUpScript : MonoBehaviour
                
                 if (gameController != null)
                 {
-                    Debug.Log("GameController gefunden, füge ein Leben hinzu.");
+                    Debug.Log("GameController gefunden, fï¿½ge ein Leben hinzu.");
                     gameController.AddLife();
                 }
                 
             }
             else if (gameObject.CompareTag("HourGlass"))
             {
-                Debug.Log("Es ist ein HourGlass-Power-up! Geschwindigkeit des Balls wird für 5 Sekunden halbiert.");
+                Debug.Log("Es ist ein HourGlass-Power-up! Geschwindigkeit des Balls wird fï¿½r 3 Sekunden halbiert.");
 
                
                 GameObject ball = GameObject.FindGameObjectWithTag("Ball");
@@ -54,18 +54,18 @@ public class PowerUpScript : MonoBehaviour
                     {
                         
                         float newSpeed = fixedSpeedScript.speed / 2;
-                        fixedSpeedScript.SetSpeed(newSpeed, 5f);
+                        fixedSpeedScript.SetSpeed(newSpeed, 3f);
                     }
                     if (gameController != null)
                     {
-                        gameController.ChangeBackgroundMusicForDuration(gameController.slowMotionMusic, 5f);
+                        gameController.ChangeBackgroundMusicForDuration(gameController.slowMotionMusic, 3f);
                     }
                 }
                 
             }
             else if (gameObject.CompareTag("XL_Pad"))
             {
-                Debug.Log("Es ist ein XL_Pad-Power-up! Paddle wird für 7 Sekunden verlängert.");
+                Debug.Log("Es ist ein XL_Pad-Power-up! Paddle wird fï¿½r 7 Sekunden verlï¿½ngert.");
 
               
                 GameObject paddle = GameObject.FindGameObjectWithTag("Paddle");
